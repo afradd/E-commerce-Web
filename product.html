@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ShopHub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/product.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">ShopHub</a>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products..." id="searchInput">
+                    <button class="search-btn" id="searchBtn">
+                        <span class="css-magnifier"></span>
+                    </button>
+                </div>
+                
+                <div class="header-actions">
+                    <button class="header-btn" id="signInBtn">
+                        <img src="images/signin.png" alt="Sign In" class="icon-img" />
+                        <span>Sign In</span>
+                    </button>
+                    
+                    <button class="header-btn cart-btn" id="cartBtn">
+                        <img src="images/cart.png" alt="Cart" class="icon-img" />
+                        <span>Cart</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span>&gt;</span>
+            <span id="breadcrumbCategory">Category</span>
+            <span>&gt;</span>
+            <span id="breadcrumbProduct">Product</span>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <main class="product-detail">
+        <div class="container">
+            <div class="product-layout">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainImage" src="" alt="Product Image">
+                    </div>
+                    <div class="thumbnail-images" id="thumbnailImages">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <h1 id="productName">Product Name</h1>
+                    <div class="rating">
+                        <div class="stars" id="productStars"></div>
+                        <span id="productRating">0</span>
+                        <span>(<span id="productReviews">0</span> reviews)</span>
+                    </div>
+                    
+                    <div class="price">
+                        <span class="current-price" id="currentPrice">$0.00</span>
+                        <span class="original-price" id="originalPrice"></span>
+                    </div>
+                    
+                    <div class="stock-status" id="stockStatus">
+                        <span class="in-stock">✓ In Stock</span>
+                    </div>
+                    
+                    <div class="description">
+                        <h3>About this item</h3>
+                        <p id="productDescription"></p>
+                    </div>
+                    
+                    <div class="features" id="productFeatures">
+                        <h3>Key Features</h3>
+                        <ul id="featuresList"></ul>
+                    </div>
+                    
+                    <div class="purchase-options">
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <select id="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <button class="add-to-cart-btn" id="addToCartBtn">Add to Cart</button>
+                            <button class="buy-now-btn" id="buyNowBtn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2>Related Products</h2>
+            <div class="product-grid" id="relatedProducts">
+                <!-- Related products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopHub</h3>
+                    <p>Your trusted online shopping destination with quality products and excellent service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+</html>
